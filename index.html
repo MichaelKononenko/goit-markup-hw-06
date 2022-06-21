@@ -409,16 +409,47 @@
               </li>                      
             </ul>
         </div>
+        <div class="subscribe">
+            <form class="subscribe-form">
+              <div class="label-wrapper">
+                <label for="user-email" class="subscribe-title">Подпишитесь на рассылку</label>
+                <input type="email" name="email" id="user-email" placeholder="E-mail" class="email-field">
+              </div>
+              <button class="subscribe-button" type="submit">Подписаться
+              <svg class="send-icon" width="24" height="24">
+                <use href="./images/icons.svg#send"></use>
+              </svg>
+            </button>
+            </form> 
+        </div>
       </div>
     </footer>
     <!-- бекдроп -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal> -->
       <div class="modal-window">
         <button class="button close" data-modal-close>
           <svg class="close-icon" width="18px" height="18px">
            <use href="./images/icons.svg#x"></use>
           </svg>
         </button>
+        <strong class="modal-title">Оставьте свои данные, мы вам перезвоним</strong>
+        <form action="" class="modal-form">
+          <label for="">Имя</label><input type="text">
+          <label for="">Телефон</label><input type="text">
+          <label for="">Почта</label><input type="text">
+          <label for="">Комментарий</label><input type="text">
+          <div class="agreement">
+            <div class="agreement-check">
+              <svg class="agreement-icon" width="11" height="8">
+               <use href="./images/icons.svg#v"></use>
+              </svg>
+            </div>
+            <p class="agreement-text">Соглашаюсь с рассылкой и принимаю 
+              <a class="agreement-terms" href="">Условия договора</a>
+            </p>
+          </div>
+          <button class="submit-button" type="submit">Отправить</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
