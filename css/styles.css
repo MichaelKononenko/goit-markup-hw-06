@@ -299,6 +299,7 @@ body {
   color: var(--primary-background-color);
   background-color: var(--action-color);
   box-shadow: var(--primary-box-shadow);
+  cursor: pointer;
 }
 
 .send-icon {
@@ -344,6 +345,7 @@ body {
   color: var(--hero-text-color);
   background-color: var(--action-color);
   transition: background-color var(--primary-transition-time) var(--primary-cubic-function);
+  cursor: pointer;
 }
 .hero-button:hover,
 .hero-button:focus {
@@ -655,6 +657,7 @@ body {
   border: none;
   transition: background-image var(--primary-transition-time) var(--primary-cubic-function);
 }
+.check-input:hover + .check-icon,
 .check-input:focus + .check-icon {
   border: 2px solid var(--action-color);
   border-radius: 2px;
